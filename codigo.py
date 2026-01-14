@@ -56,7 +56,7 @@ for linha in tabela.index:
     pyautogui.press("tab")
 
     #tipo
-    tipo = str(tabela.loc[linha, "tipo"])
+    tipo = str(tabela.loc[linha, "tipo"]) #linha, coluna. ou seja, linha de nome linha, e coluna tipo
     pyautogui.write(tipo)
     pyautogui.press("tab")
 
@@ -77,9 +77,17 @@ for linha in tabela.index:
     
     #obs
     obs = str(tabela.loc[linha, "obs"])
-    pyautogui.write(obs)
-    pyautogui.click(x=925, y=960)
 
+    if obs != "nan":
+        pyautogui.write(obs)
+    else:
+        pyautogui.write("Sem observacoes.")
+
+    pyautogui.click(x=925, y=960)
     pyautogui.scroll(5000)
 
 # repetir até finalizar
+
+
+
+
