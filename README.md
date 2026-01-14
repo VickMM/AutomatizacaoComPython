@@ -71,8 +71,6 @@ Victoria
 Estudante de Análise e Desenvolvimento de Sistemas (ADS) – 4º semestre
 Foco em Python, Dados, Automação e SQL
 
-📎 LinkedIn: (adicione seu link aqui)
-📎 GitHub: (adicione seu link aqui)
 
 📌 Observação final
 
